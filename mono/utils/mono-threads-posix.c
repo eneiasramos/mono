@@ -21,6 +21,7 @@
 
 #if defined (__HAIKU__)
 #include <os/kernel/OS.h>
+extern int pthread_getname_np(pthread_t thread, char* buffer, size_t length);
 #endif
 
 #include <mono/utils/mono-threads.h>
