@@ -4514,6 +4514,10 @@ case "$host" in
 			BTLS_SUPPORTED=yes
 			BTLS_PLATFORM=x86_64
 			;;
+		  solaris*)
+			BTLS_SUPPORTED=yes
+			BTLS_PLATFORM=x86_64
+			;;
 		  mingw*|cygwin*)
 			BTLS_SUPPORTED=no
 			BTLS_PLATFORM=x86_64
