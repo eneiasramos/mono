@@ -1966,7 +1966,11 @@ struct Mono_Posix_In6Addr {
 };
 
 struct Mono_Posix_InAddr {
+#if (defined(__SVR4) || defined(__svr4__))
+	unsigned int t_addr;
+#else
 	unsigned int s_addr;
+#endif
 };
 
 struct Mono_Posix_Iovec {
